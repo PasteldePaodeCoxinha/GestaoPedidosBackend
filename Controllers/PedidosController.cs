@@ -80,7 +80,6 @@ namespace GestaoApi.Controllers
             return CreatedAtAction(nameof(GetPedido), new { id = pedido.Id }, pedido);
         }
 
-        // DELETE: api/Pedidos/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePedido(long id)
         {
